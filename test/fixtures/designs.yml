@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_design: MyString
+  name_designer: MyString
+  lastname_designer: MyString
+  email_designer: MyString
+  price: 1
+  project: one
+
+two:
+  name_design: MyString
+  name_designer: MyString
+  lastname_designer: MyString
+  email_designer: MyString
+  price: 1
+  project: two

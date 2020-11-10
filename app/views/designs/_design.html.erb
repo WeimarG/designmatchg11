@@ -1,0 +1,30 @@
+<tr>
+    
+    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+        <td><%= design['designer'][0]['name'].to_s%></td>
+        <td><%= design['designer'][0]['lastname'].to_s %></td>
+        <td><%= design['designer'][0]['email'].to_s %></td>
+        <td><%= design['created_at.to_s(:long)'] %></td>
+        <td><%= design['state'][0]['name_state'].to_s %></td>
+    <% end %> 
+        <td>
+        <%= image_tag design['mini'] %>
+        <h6><%= link_to 'Descargar', design['original_design'], download: :image %></h6>
+        </td>
+        
+    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+        <td>
+        <% cadena = design['original_design'].to_s%>
+        <% pathmod = cadena.sub /\.[^.]+\z/, "mod.png" %> 
+        <%= image_tag design['mini']%>
+        <h6><%= link_to 'Descargar', pathmod, download: :image %></h6>
+        </td>
+        <td><p>COP <%= number_to_currency(design['price'], precision: 0) %></p></td>
+    <% end %>
+
+    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>    
+        <td><h6><%= link_to 'Previsualizar',design['original_design'], target: "_blank", format: :image %></h6></td>
+    <% else %>
+         <td><h6><%= link_to 'Previsualizar', design['original_design'], target: "_blank", format: :image %></h6></td>
+    <% end %>  
+</tr>

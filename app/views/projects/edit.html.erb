@@ -1,0 +1,24 @@
+<div class="container-fluid fill-height">
+  <div class="row">
+    <h1 class="ed-title">Modificar información</h1>
+  </div>
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col">
+      <div class="editor border">
+        <%= form_tag project_path, method: :patch do %>
+          <div id="div_id_project" class="form-group required">
+            <%=  label_tag 'Nombre del proyecto', nil, class:'control-label col-md-6' %><%=  text_field_tag :name_project, @name_project, class:'control-label' %><br/>
+            <%=  label_tag 'Descripción', nil, class:'control-label col-md-6' %><%=  text_area_tag :description, @description, class:'control-label' %><br/>
+            <%=  label_tag 'Valor estimado a pagar', nil, class:'control-label col-md-6' %><%=  text_field_tag :e_value, @e_value, class:'control-label' %><br/>
+            <hr>
+            <%= submit_tag 'Actualizar', class: 'control-label' %>    
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>

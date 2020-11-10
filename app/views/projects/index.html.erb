@@ -1,0 +1,106 @@
+<div style="padding-top:6em;">
+    <% if flash[:message] %>
+        <%= show_Message %>
+        <div id="messageDiv">
+            <p class="messageText"><%= flash[:message] %></p>
+        </div>
+    <% end %>
+</div>
+<div>
+  <h1>Mis proyectos</h1>
+</div>
+
+<div class="fill-height ">
+      <!--Accordion wrapper-->
+  <div class="accordion md-accordion accordion-blocks" id="accordionEx78" role="tablist"
+    aria-multiselectable="true" style="padding-top: 1.5em;">
+    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+      <p class="uri"> Comparte tus proyectos: <%= label_tag @uri %></p>
+    <% end %>
+    <% if !@projects.empty?%>
+      <% @projects.each do |project| %>
+        <hr>
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="Heading<%= project.id %>" data-toggle="collapse" href="#collapse<%= project.id %>" aria-expanded="true"
+            aria-controls="collapse<%= project.id %>">
+
+            <!--Options-->
+            <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+            <div class="dropdown float-left">
+              <button class="btn btn-info btn-sm m-0 mr-3 p-2 dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-pencil-alt"></i>
+              </button>
+              <div class="dropdown-menu dropdown-info">
+                <%= link_to 'Ver información', project_path(project), class: 'dropdown-item' %>
+                <%= link_to 'Modificar', edit_project_path(project), class: 'dropdown-item' %>
+                <%= link_to 'Eliminar', project_path(project), method: :delete, data: {confirm: '¿Está seguro de eliminar el proyecto?'}, class: 'dropdown-item' %>
+              </div>
+            </div>
+            <% end %> 
+
+            <!-- Heading -->
+            <a data-toggle="collapse" href="#collapse<%= project.id %>" aria-expanded="true"
+              aria-controls="collapse<%= project.id %>" >
+              <h5 class="mt-1 mb-0">
+                <span><%= project.name_project %></span>
+                <i class="fas fa-angle-down rotate-icon"></i>              
+              </h5>
+            </a>
+
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse<%= project.id %>" class="collapse" role="tabpanel" aria-labelledby="Heading<%= project.id %>"
+            data-parent="#accordionEx78">
+            <div class="card-body">
+
+              <% if !params[:slug].to_s.strip.empty? %>
+              <%= link_to 'Subir nuevo diseño',  new_design_path(id: project.id), :method => :get, :class => "btn btn-lg bt-loadFile" %>
+              <% end %> 
+
+              <!-- Table responsive wrapper -->
+              <div class="table-responsive mx-3">
+                <!--Table-->
+                <table class="display designsTable" style="width:100%">
+                  <thead>
+                    <tr>
+                    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                        <th>Fecha de creación</th>
+                        <th>Estado</th>
+                    <% end %>    
+                        <th>Diseño original</th>
+                    <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+                        <th>Diseño convertido</th>
+                        <th>Precio</th>
+                    <% end %>    
+                        <th>Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <%= render partial: '/designs/design', collection: designs_list(project.id) %>  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="text-muted">
+        <div style="width:100%">
+          <p style="text-align: center">No hay proyectos para mostrar</p>
+        </div>
+      </div>
+    <% end %>
+    <br>
+    <br>
+    <hr>
+  </div>
+  <!--/.Accordion wrapper-->
+</div>				                            

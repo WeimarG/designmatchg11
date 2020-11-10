@@ -1,0 +1,34 @@
+<div class="container-fluid fill-height">
+    <br>
+    <div class="row" style="padding-top:1em;">
+        <div class="col-1">
+        </div>
+        <div class="col">
+            <h1>Carga tu diseño</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col">
+            <div class="newDesign border">
+                <%= form_for :design do |f| %>
+                    <b><%= f.label "Nombre", class:"control-label col-md-6" %></b>
+                    <%= f.text_field :name, class:"control-label" %><br>
+                    <b><%= f.label "Apellido", class:"control-label col-md-6" %></b>
+                    <%= f.text_field :lastname, class:"control-label" %><br>
+                    <b><%= f.label "Email", class:"control-label col-md-6" %></b>
+                    <%= f.text_field :email, class:"control-label" %><br>
+                    <b><%= f.label "Diseño", class:"control-label col-md-6" %></b>
+                    <%= f.file_field :path_original_design, class:"control-label", accept:'image/png,image/jpg,image/jpeg' %><br>
+                    <b><%= f.label "Precio", class:"control-label col-md-6"%></b>
+                    <%= f.number_field :price, class:"control-label" %><br>
+
+                    <%= f.submit 'Enviar Diseño', :class => 'control-label btn mybtn' %>
+                <%end%>
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+    </div>
+</div>

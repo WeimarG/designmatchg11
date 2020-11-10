@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DesignMatch</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application" %>
+    <script type="text/javascript">
+        function testMessage() {
+          setTimeout(function() {
+              $('#messageDiv').fadeOut('fast');
+          }, 5000)
+        }
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand a-white" href="/">DesignMatch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item hvr-underline-reveal active">
+              <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+                <%= link_to projects_path, :method => :get, :class => "nav-link a-white" do %> Inicio
+                  <span class="sr-only">(current)</span>
+                <% end %>
+              <% else %> 
+                <%= link_to root_path, :class => "nav-link a-white" do %> Inicio
+                  <span class="sr-only">(current)</span>
+                <% end %>
+              <% end %>
+            </li>
+            <% if !params[:slug].to_s.strip.empty? or @userId.to_s.strip.empty? %>
+              <li class="nav-item hvr-underline-reveal">
+                <%= link_to 'Servicios', services_path, :method => :get, :class => "nav-link a-white" %>
+              </li>
+            <% end %>
+            <li class="nav-item hvr-underline-reveal">
+              <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+                <%= link_to 'Crear proyecto', new_project_path, :method => :get, :class => "nav-link a-white" %>
+              <% else %> 
+                <%= link_to "Iniciar sesión", {:controller => 'sessions', :action =>'index'}, :class => "nav-link a-white" %>
+              <% end %>
+            </li>
+            <li class="nav-item hvr-underline-reveal">
+              <% if params[:slug].to_s.strip.empty? and !@userId.to_s.strip.empty? %>
+                <%= link_to 'Cerrar sesión', session_path(cookies[:current_session]), :method => :delete, :class => "nav-link a-white" %>
+              <% else %> 
+                <%= link_to "Regístrate", {:controller => 'users', :action =>'index'}, :class => "nav-link a-white" %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; Eleven Group 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>
