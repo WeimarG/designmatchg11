@@ -1,0 +1,29 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.editor {
+    border-radius: 1.1rem;
+    padding: 1rem;
+}
+
+.ed-title {
+    margin-top: 60px;
+}
+
+.bt-loadFile{
+    background-color: white !important;
+    border-color: grey !important;
+    margin-bottom: 1em;
+    color: #1fcac2 !important;
+    float: right;
+    font-size: 11pt !important;
+}
+
+.uri{
+    text-align: right;
+}
+
+.mytxt {
+    width: 180px;
+}

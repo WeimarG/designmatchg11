@@ -1,0 +1,15 @@
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/home/ubuntu/.rvm/rubies/ruby-2.7.1/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20200929-20684-gu8i92.rb extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20200929-20684-gm0s4d

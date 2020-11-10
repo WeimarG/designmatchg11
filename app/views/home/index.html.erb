@@ -1,0 +1,62 @@
+  <!-- Page Content -->
+  <div class="container fill-height">
+
+    <!-- Jumbotron Header -->
+    <div  class="jumbotron my-4">
+      <h2 class="display-4">Bienvenido a DesignMatch</h2>
+      <p class="lead">En nuestro sitio web podrá solicitar <br>abiertamente diseños para sus proyectos.</p>
+      <%= link_to 'Conocer más!', services_path, :method => :get, :class => "btn btn-lg bt-conocer" %>
+    </div>
+
+    <div>
+      <h3 style="padding-bottom:1em;">Conoce algunos diseños...</h3>
+    </div>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <%= image_tag("champions.jpg",  class: "card-img-top", size: "253x166", alt: "") %>
+          <div class="card-body">
+            <h4 class="card-title">Andrea Velasco</h4>
+            <p class="card-text">Campaña champions league.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <%= image_tag("coca-cola.jpg",  class: "card-img-top", size: "253x166", alt: "") %>
+          <div class="card-body">
+            <h4 class="card-title">Ricardo Martínez</h4>
+            <p class="card-text">Campaña coca-cola.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <%= image_tag("salud.jpg",  class: "card-img-top", size: "253x166", alt: "") %>
+          <div class="card-body">
+            <h4 class="card-title">Eduardo Rivera</h4>
+            <p class="card-text">Campaña tele-medicina Sura.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <%= image_tag("viajes.jpg",  class: "card-img-top", size: "253x166", alt: "") %>
+          <div class="card-body">
+            <h4 class="card-title">Natalia Ballesteros</h4>
+            <p class="card-text">Campaña viajes y turismo Decameron.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->

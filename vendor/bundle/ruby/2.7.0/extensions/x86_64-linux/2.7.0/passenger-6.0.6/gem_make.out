@@ -1,0 +1,17 @@
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/src/helper-scripts/download_binaries
+/home/ubuntu/.rvm/rubies/ruby-2.7.1/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20200929-20684-1aomkfm.rb extconf.rb
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.6/rubyext-ruby-2.7.1-x86_64-linux.tar.gz into /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/download_cache
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.6/nginx-1.18.0-x86_64-linux.tar.gz into /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/download_cache
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.6/agent-x86_64-linux.tar.gz into /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/download_cache
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/src/helper-scripts/download_binaries
+make "DESTDIR=" clean
+true
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/src/helper-scripts/download_binaries
+make "DESTDIR="
+true
+
+current directory: /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/passenger-6.0.6/src/helper-scripts/download_binaries
+make "DESTDIR=" install
+true

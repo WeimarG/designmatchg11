@@ -1,0 +1,20 @@
+<div class="container-fluid fill-height">
+  <div class="row">
+    <h1 class="ed-title">Detalles</h1>
+  </div>
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col">
+      <%= form_tag project_path, method: :patch do %>
+        <div id="div_id_project" class="form-group required">
+          <%=  label_tag 'Nombre del proyecto: ', nil, class:'control-label' %><%=  label_tag @projects.name_project, nil, class:'control-label' %><br/>
+          <%=  label_tag 'Descripción: ', nil, class:'control-label' %><%=  label_tag @projects.description, nil, class:'control-label' %><br/>
+          <%=  label_tag 'Valor estimado a pagar: ', nil, class:'control-label' %><%=  label_tag @projects.e_value, nil, class:'control-label' %><br/> 
+        </div>
+      <% end %>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>

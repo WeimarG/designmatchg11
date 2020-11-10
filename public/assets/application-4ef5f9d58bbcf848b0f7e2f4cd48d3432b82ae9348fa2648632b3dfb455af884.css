@@ -1,0 +1,884 @@
+/*
+ * Table styles
+ */
+/* line 63, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+  /*
+   * Header and footer styles
+   */
+  /*
+   * Body styles
+   */
+}
+/* line 75, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: bold;
+}
+/* line 80, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px 18px;
+  border-bottom: 1px solid #111;
+}
+/* line 88, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+  outline: none;
+}
+/* line 93, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  padding: 10px 18px 6px 18px;
+  border-top: 1px solid #111;
+}
+/* line 105, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+  *cursor: hand;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+/* line 116, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting {
+  background-image: url(/assets/datatables/sort_both-3e016c23ae51417382b640ae2d19eb48047532c37ad53894bd185586559ccffb.png);
+}
+/* line 119, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting_asc {
+  background-image: url(/assets/datatables/sort_asc-595704c3f3cf4cb65c7d9c8508a99e7480e150095473faed31a07c21b13389b8.png);
+}
+/* line 122, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting_desc {
+  background-image: url(/assets/datatables/sort_desc-d08ed0e21f187dd309030d465224da8085119a15a17d616ba0e477bb50c6f10d.png);
+}
+/* line 125, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting_asc_disabled {
+  background-image: url(/assets/datatables/sort_asc_disabled-a65b8f4f84d6427a81c360282fc5394d51bf99dada5f159e6aa0fce3c396825c.png);
+}
+/* line 128, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead .sorting_desc_disabled {
+  background-image: url(/assets/datatables/sort_desc_disabled-6c0f0c1b21ef6807057afc8ddc1a925d1dbd21cb11e9270ec84ff4ac40d9a3fa.png);
+}
+/* line 139, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody tr {
+  background-color: #ffffff;
+}
+/* line 142, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody tr.selected {
+  background-color: #B0BED9;
+}
+/* line 147, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 8px 10px;
+}
+/* line 157, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+  border-top: 1px solid #ddd;
+}
+/* line 161, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.row-border tbody tr:first-child th,
+table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th,
+table.dataTable.display tbody tr:first-child td {
+  border-top: none;
+}
+/* line 170, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.cell-border tbody th, table.dataTable.cell-border tbody td {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+/* line 175, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child {
+  border-left: 1px solid #ddd;
+}
+/* line 180, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.cell-border tbody tr:first-child th,
+table.dataTable.cell-border tbody tr:first-child td {
+  border-top: none;
+}
+/* line 190, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+  background-color: #f9f9f9;
+}
+/* line 193, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
+  background-color: #acbad4;
+}
+/* line 203, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: #f6f6f6;
+}
+/* line 206, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected {
+  background-color: #aab7d1;
+}
+/* line 217, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3, table.dataTable.display tbody tr > .sorting_1,
+table.dataTable.display tbody tr > .sorting_2,
+table.dataTable.display tbody tr > .sorting_3 {
+  background-color: #fafafa;
+}
+/* line 223, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.order-column tbody tr.selected > .sorting_1,
+table.dataTable.order-column tbody tr.selected > .sorting_2,
+table.dataTable.order-column tbody tr.selected > .sorting_3, table.dataTable.display tbody tr.selected > .sorting_1,
+table.dataTable.display tbody tr.selected > .sorting_2,
+table.dataTable.display tbody tr.selected > .sorting_3 {
+  background-color: #acbad5;
+}
+/* line 234, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  background-color: #f1f1f1;
+}
+/* line 235, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
+  background-color: #f3f3f3;
+}
+/* line 236, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+  background-color: whitesmoke;
+}
+/* line 239, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1 {
+  background-color: #a6b4cd;
+}
+/* line 240, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2 {
+  background-color: #a8b5cf;
+}
+/* line 241, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3 {
+  background-color: #a9b7d1;
+}
+/* line 246, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  background-color: #fafafa;
+}
+/* line 247, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
+  background-color: #fcfcfc;
+}
+/* line 248, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even > .sorting_3, table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+  background-color: #fefefe;
+}
+/* line 251, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
+  background-color: #acbad5;
+}
+/* line 252, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2 {
+  background-color: #aebcd6;
+}
+/* line 253, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3 {
+  background-color: #afbdd8;
+}
+/* line 261, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
+  background-color: #eaeaea;
+}
+/* line 262, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2 {
+  background-color: #ececec;
+}
+/* line 263, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover > .sorting_3, table.dataTable.order-column.hover tbody tr:hover > .sorting_3 {
+  background-color: #efefef;
+}
+/* line 266, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1 {
+  background-color: #a2aec7;
+}
+/* line 267, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2 {
+  background-color: #a3b0c9;
+}
+/* line 268, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3 {
+  background-color: #a5b2cb;
+}
+/* line 273, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.no-footer {
+  border-bottom: 1px solid #111;
+}
+/* line 278, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+  white-space: nowrap;
+}
+/* line 284, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.compact thead th,
+table.dataTable.compact thead td {
+  padding: 4px 17px 4px 4px;
+}
+/* line 289, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.compact tfoot th,
+table.dataTable.compact tfoot td {
+  padding: 4px;
+}
+/* line 294, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable.compact tbody th,
+table.dataTable.compact tbody td {
+  padding: 4px;
+}
+/* line 302, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable th.dt-left,
+table.dataTable td.dt-left {
+  text-align: left;
+}
+/* line 307, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable th.dt-center,
+table.dataTable td.dt-center,
+table.dataTable td.dataTables_empty {
+  text-align: center;
+}
+/* line 313, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable th.dt-right,
+table.dataTable td.dt-right {
+  text-align: right;
+}
+/* line 318, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable th.dt-justify,
+table.dataTable td.dt-justify {
+  text-align: justify;
+}
+/* line 323, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable th.dt-nowrap,
+table.dataTable td.dt-nowrap {
+  white-space: nowrap;
+}
+/* line 330, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th.dt-head-left,
+table.dataTable thead td.dt-head-left,
+table.dataTable tfoot th.dt-head-left,
+table.dataTable tfoot td.dt-head-left {
+  text-align: left;
+}
+/* line 335, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th.dt-head-center,
+table.dataTable thead td.dt-head-center,
+table.dataTable tfoot th.dt-head-center,
+table.dataTable tfoot td.dt-head-center {
+  text-align: center;
+}
+/* line 340, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th.dt-head-right,
+table.dataTable thead td.dt-head-right,
+table.dataTable tfoot th.dt-head-right,
+table.dataTable tfoot td.dt-head-right {
+  text-align: right;
+}
+/* line 345, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th.dt-head-justify,
+table.dataTable thead td.dt-head-justify,
+table.dataTable tfoot th.dt-head-justify,
+table.dataTable tfoot td.dt-head-justify {
+  text-align: justify;
+}
+/* line 350, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable thead th.dt-head-nowrap,
+table.dataTable thead td.dt-head-nowrap,
+table.dataTable tfoot th.dt-head-nowrap,
+table.dataTable tfoot td.dt-head-nowrap {
+  white-space: nowrap;
+}
+/* line 357, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th.dt-body-left,
+table.dataTable tbody td.dt-body-left {
+  text-align: left;
+}
+/* line 362, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th.dt-body-center,
+table.dataTable tbody td.dt-body-center {
+  text-align: center;
+}
+/* line 367, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th.dt-body-right,
+table.dataTable tbody td.dt-body-right {
+  text-align: right;
+}
+/* line 372, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th.dt-body-justify,
+table.dataTable tbody td.dt-body-justify {
+  text-align: justify;
+}
+/* line 377, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable tbody th.dt-body-nowrap,
+table.dataTable tbody td.dt-body-nowrap {
+  white-space: nowrap;
+}
+
+/* line 386, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+table.dataTable,
+table.dataTable th,
+table.dataTable td {
+  box-sizing: content-box;
+}
+
+/*
+ * Control feature layout
+ */
+/* line 396, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper {
+  position: relative;
+  clear: both;
+  *zoom: 1;
+  zoom: 1;
+}
+/* line 402, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_length {
+  float: left;
+}
+/* line 407, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  text-align: right;
+}
+/* line 411, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+}
+/* line 417, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_info {
+  clear: both;
+  float: left;
+  padding-top: 0.755em;
+}
+/* line 424, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  text-align: right;
+  padding-top: 0.25em;
+}
+/* line 429, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  margin-left: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  *cursor: hand;
+  color: #333 !important;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+/* line 444, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #333 !important;
+  border: 1px solid #979797;
+  background-color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #dcdcdc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #dcdcdc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, white 0%, #dcdcdc 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, white 0%, #dcdcdc 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, white 0%, #dcdcdc 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, white 0%, #dcdcdc 100%);
+  /* W3C */
+}
+/* line 454, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: #666 !important;
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+}
+/* line 464, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: white !important;
+  border: 1px solid #111;
+  background-color: #585858;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #585858 0%, #111 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #585858 0%, #111 100%);
+  /* W3C */
+}
+/* line 473, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+  outline: none;
+  background-color: #2b2b2b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b2b2b), color-stop(100%, #0c0c0c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #2b2b2b 0%, #0c0c0c 100%);
+  /* W3C */
+  box-shadow: inset 0 0 3px #111;
+}
+/* line 483, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+  padding: 0 1em;
+}
+/* line 489, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 40px;
+  margin-left: -50%;
+  margin-top: -25px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+}
+/* line 511, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #333;
+}
+/* line 520, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_scroll {
+  clear: both;
+}
+/* line 523, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
+  *margin-top: -1px;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 528, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > td, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > td {
+  vertical-align: middle;
+}
+/* line 533, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > th > div.dataTables_sizing,
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > td > div.dataTables_sizing, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > th > div.dataTables_sizing,
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > td > div.dataTables_sizing {
+  height: 0;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 547, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid #111;
+}
+/* line 551, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper.no-footer div.dataTables_scrollHead table.dataTable,
+.dataTables_wrapper.no-footer div.dataTables_scrollBody > table {
+  border-bottom: none;
+}
+/* line 558, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+.dataTables_wrapper:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 574, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_paginate {
+    float: none;
+    text-align: center;
+  }
+  /* line 580, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+  .dataTables_wrapper .dataTables_paginate {
+    margin-top: 0.5em;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 588, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: center;
+  }
+  /* line 594, /home/ubuntu/Proyecto1-Grupo11/vendor/bundle/ruby/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets/datatables/jquery.dataTables.scss */
+  .dataTables_wrapper .dataTables_filter {
+    margin-top: 0.5em;
+  }
+}
+/* line 5, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/designs.scss */
+.newDesign {
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+
+/* line 10, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/designs.scss */
+.form-horizontal {
+  margin-top: 8em !important;
+}
+
+/* line 14, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/designs.scss */
+#messageDiv {
+  border: #0a9c0a;
+  border-style: double;
+  background: #9df89d;
+}
+
+/* line 20, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/designs.scss */
+.messageText {
+  text-align: center;
+  margin-top: 0.5em;
+  color: #0a9c0a;
+}
+/* line 4, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/home.scss */
+:root {
+  --azul: #048A81 ;
+}
+
+/* line 8, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/home.scss */
+.jumbotron {
+  background-image: url(banner.jpg) !important;
+  color: white;
+}
+
+/* line 13, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/home.scss */
+.a-white {
+  color: white !important;
+}
+
+/* line 17, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/home.scss */
+.bt-conocer {
+  background-color: white !important;
+  color: #1fcac2 !important;
+}
+/* line 5, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/projects.scss */
+.editor {
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+
+/* line 10, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/projects.scss */
+.ed-title {
+  margin-top: 60px;
+}
+
+/* line 14, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/projects.scss */
+.bt-loadFile {
+  background-color: white !important;
+  border-color: grey !important;
+  margin-bottom: 1em;
+  color: #1fcac2 !important;
+  float: right;
+  font-size: 11pt !important;
+}
+
+/* line 23, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/projects.scss */
+.uri {
+  text-align: right;
+}
+
+/* line 27, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/projects.scss */
+.mytxt {
+  width: 180px;
+}
+/* line 4, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.services {
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+}
+
+/* line 9, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* line 14, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #0f394c;
+}
+
+/* line 23, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 32, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 43, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.services .icon {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 30px);
+}
+
+/* line 49, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.services .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* line 56, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/services.scss */
+.services .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+/* line 1, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.signInContainer {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background: white;
+}
+
+/* line 7, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.title {
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* line 11, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.signin {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #4a5c6a;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  color: white;
+}
+
+/* line 29, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.tx-tfm {
+  text-transform: uppercase;
+}
+
+/* line 32, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.mybtn {
+  border-radius: 50px;
+}
+
+/* line 36, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+
+/* line 47, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* line 53, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/sessions.scss */
+form .error {
+  color: #ff0000;
+}
+/* line 1, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.signUpContainer {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background: white;
+}
+
+/* line 7, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.title {
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* line 11, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.signup {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #4a5c6a;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  color: white;
+}
+
+/* line 28, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.tx-tfm {
+  text-transform: uppercase;
+}
+
+/* line 31, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.mybtn {
+  border-radius: 50px;
+  background-color: #1fcac2 !important;
+  color: white !important;
+}
+
+/* line 37, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 46, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+
+/* line 57, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* line 63, /home/ubuntu/Proyecto1-Grupo11/app/assets/stylesheets/users.scss */
+form .error {
+  color: #ff0000;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+
+.navbar {
+    background-color: #4a5c6a;
+}
+
+.fill-height {
+    min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    width: 90%;
+    margin-left: 5em;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Underline Reveal */
+.hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1fcac2;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
