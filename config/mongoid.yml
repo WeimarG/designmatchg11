@@ -149,3 +149,12 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+
+production:
+  clients:
+    default:
+      database: designMatch
+      hosts:
+        - 18.220.233.151:27017
+      options:
+       server_selection_timeout: 1
