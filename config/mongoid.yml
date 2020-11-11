@@ -3,7 +3,7 @@ development:
     default:
       database: designMatch
       hosts:
-        - 18.188.129.219:27017
+        - 18.220.233.151:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
