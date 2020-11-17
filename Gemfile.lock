@@ -1012,6 +1012,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    dalli (2.7.11)
     erubis (2.7.0)
     excon (0.78.0)
     execjs (2.7.0)
@@ -1188,6 +1189,7 @@ DEPENDENCIES
   byebug
   carrierwave-mongoid
   coffee-rails (~> 4.2)
+  dalli
   figaro
   fog-aws
   iconv (~> 1.0.3)

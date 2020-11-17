@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'dalli'
 gem "iconv", "~> 1.0.3"
 gem 'whenever', require: false
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'

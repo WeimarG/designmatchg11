@@ -14,13 +14,14 @@ Rails.application.configure do
 
   # Enable/disable caching. By default caching is disabled.
   config.action_controller.perform_caching = true
-  config.session_store = :redis_store, {
-    host: 'redis://designmatchcache.oekypa.ng.0001.use2.cache.amazonaws.com',
-    port: 6379,
-    db: 0, 
-    namespace: 'desingmatchcache'
-  },{
-    exprires_in: 90.minutes
+  config.session_store = :mem_cache_store,
+  (ENV["mc2.dev.ec2.memcachier.com"] || "").split(","),
+  {:username => ENV["14288D"],
+   :password => ENV["E93E6D3B27F0A3360F51C6DC5C95DE20"],
+   :failover => true,
+   :socket_timeout => 1.5,
+   :socket_failure_delay => 0.2,
+   :down_retry_delay => 60
   }
 
   # Don't care if the mailer can't send.

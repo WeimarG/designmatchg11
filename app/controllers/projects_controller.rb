@@ -9,7 +9,7 @@ class ProjectsController < ApplicationController
     if cookies[:current_session].to_s.strip.empty?
       @userId = User.find_by(slug: params[:slug])
     else
-      @userId = User.find_by(_id: $redis.get(cookies[:current_session]))
+      @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
     end
         
     @uri = "#{request.env['HTTP_HOST'].downcase}/company/#{@userId.slug}"
@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @userId = User.find_by(_id: $redis.get(cookies[:current_session]))
+    @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
     @projects = Project.and({user: @userId.id}, {_id: params[:id]}).first
 
     respond_to do |format|
@@ -41,11 +41,11 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @userId = User.find_by(_id: $redis.get(cookies[:current_session]))
+    @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
   end
 
   def create
-      @userId = User.find_by(_id: $redis.get(cookies[:current_session]))
+      @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
 			@project = Project.create!(
 				name_project: params[:name_project],
 				description: params[:description],
@@ -69,7 +69,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    @userId = User.find_by(_id: $redis.get(cookies[:current_session]))
+    @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
     @project = Project.where(_id: params[:id])
       .update(
         name_project: params[:name_project],
@@ -93,7 +93,7 @@ class ProjectsController < ApplicationController
   end 
 
   def destroy
-    @user = User.find_by(_id: $redis.get(cookies[:current_session]))
+    @user = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
     @project = Project.and({user: @user.id}, {_id: params[:id]}).first
     @designs= Design.where(project: params[:id])
     for design in @designs do

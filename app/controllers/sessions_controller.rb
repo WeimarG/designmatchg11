@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     respond_to do |format|
         if !@user.to_s.strip.empty?
             token = generate_token
-            $redis.set(token, @user._id)
+            Rails.cache.write(token, @user._id)
             cookies.permanent[:current_session] = token
             @user.update(token: token)
             format.html { redirect_to controller: "projects", action: "index" }      
