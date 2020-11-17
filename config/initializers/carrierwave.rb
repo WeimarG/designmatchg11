@@ -8,7 +8,7 @@ CarrierWave.configure do |config|
         config.storage = :fog        
     end
 
-    config.asset_host = "http://d300ffaqtbae2i.cloudfront.net"
+    config.asset_host = "http://d33ipb1vzn24gg.cloudfront.net"
     config.cache_dir        = "#{Rails.root}/tmp/upload"
     config.fog_directory    = ENV['S3_BUCKET']
     end
