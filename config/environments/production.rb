@@ -13,14 +13,14 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.cache_store = :dalli_store,
-  (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-  {:username => ENV["MEMCACHIER_USERNAME"],
-   :password => ENV["MEMCACHIER_PASSWORD"]
-   #:failover => true,
-   #:socket_timeout => 1.5,
-   #:socket_failure_delay => 0.2,
-   #:down_retry_delay => 60
+  config.cache_store = :mem_cache_store,
+  (ENV["mc2.dev.ec2.memcachier.com"] || "").split(","),
+  {:username => ENV["14288D"],
+   :password => ENV["E93E6D3B27F0A3360F51C6DC5C95DE20"],
+   :failover => true,
+   :socket_timeout => 1.5,
+   :socket_failure_delay => 0.2,
+   :down_retry_delay => 60
   }
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
