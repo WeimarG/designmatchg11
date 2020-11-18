@@ -5,13 +5,13 @@ class ProjectsController < ApplicationController
 
   def index
     @userId =""
-    cachev = Rails.cache.read(cookies[:current_session])
+
     if cookies[:current_session].to_s.strip.empty?
       @userId = User.find_by(slug: params[:slug])
     else
-      @userId = User.find_by(_id: cachev)
+      @userId = User.find_by(_id: Rails.cache.read(cookies[:current_session]))
     end
-    Rails.cache.write(cachev, @userId._id)
+        
     @uri = "#{request.env['HTTP_HOST'].downcase}/company/#{@userId.slug}"
 
     @projects = Project.where(user: @userId.id)
