@@ -71,7 +71,7 @@ class DesignsController < ApplicationController
 
   def send_message(message)
     sqs = Aws::SQS::Client.new(region: 'us-east-2')
-    queue_url = "https://sqs.us-east-2.amazonaws.com/994617978174/designsqs.fifo"
+    queue_url = "https://sqs.us-east-2.amazonaws.com/994617978174/designmatchsqs"
     sqs.send_message(queue_url: queue_url, message_body: message)
   end
 end
