@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'dalli'
+gem 'memcachier'
 gem "iconv", "~> 1.0.3"
 gem 'whenever', require: false
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
