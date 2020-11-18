@@ -14,9 +14,9 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   config.cache_store = :mem_cache_store,
-  (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-  {:username => ENV["MEMCACHIER_USERNAME"],
-   :password => ENV["MEMCACHIER_PASSWORD"],
+  (ENV["mc2.dev.ec2.memcachier.com"] || "").split(","),
+  {:username => ENV["14288D"],
+   :password => ENV["E93E6D3B27F0A3360F51C6DC5C95DE20"],
    :failover => true,
    :socket_timeout => 1.5,
    :socket_failure_delay => 0.2,
