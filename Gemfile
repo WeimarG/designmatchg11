@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'rails_autoscale_agent'
 gem 'dalli'
 gem 'memcachier'
 gem "iconv", "~> 1.0.3"
